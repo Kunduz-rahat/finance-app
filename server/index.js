@@ -27,4 +27,4 @@ mongoose
   .then(async () => {
     app.listen(PORT, () => console.log(`server started in ${PORT}`));
   })
-  .catch((e) => console.log(e));
+  .catch((e) => console.log(`${e} did connect`));
