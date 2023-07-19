@@ -8,7 +8,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   const { palette } = useTheme();
-  console.log(palette.primary)
+
   const [selected, setSelected] = useState("dashboard");
 
   return (
