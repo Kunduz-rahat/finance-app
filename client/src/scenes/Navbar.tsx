@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Box, Typography, useTheme } from "@mui/material";
-
 import PixIcon from "@mui/icons-material/Pix";
-import  FlexBetween  from "../components/FlexBetween";
+import FlexBetween from "../components/FlexBetween";
+
 type Props = {};
 
 const Navbar = (props: Props) => {

@@ -1,9 +1,5 @@
-import BoxHeader from "../../components/BoxHeader";
-import DashboardBox from "../../components/DashboardBox";
-import FlexBetween from "../../components/FlexBetween";
-import { useGetKpisQuery, useGetProductsQuery } from "../../state/api";
+import { useMemo } from "react";
 import { Box, Typography, useTheme } from "@mui/material";
-import React, { useMemo } from "react";
 import {
   Tooltip,
   CartesianGrid,
@@ -19,6 +15,10 @@ import {
   Scatter,
   ZAxis,
 } from "recharts";
+import BoxHeader from "../../components/BoxHeader";
+import DashboardBox from "../../components/DashboardBox";
+import FlexBetween from "../../components/FlexBetween";
+import { useGetKpisQuery, useGetProductsQuery } from "../../state/api";
 
 const pieData = [
   { name: "Group A", value: 600 },

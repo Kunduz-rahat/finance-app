@@ -1,6 +1,3 @@
-import BoxHeader from "../../components/BoxHeader";
-import DashboardBox from "../../components/DashboardBox";
-import { useGetKpisQuery } from "../../state/api";
 import { useTheme } from "@mui/material";
 import { useMemo } from "react";
 import {
@@ -17,9 +14,13 @@ import {
   Tooltip,
   Area,
 } from "recharts";
+import BoxHeader from "../../components/BoxHeader";
+import DashboardBox from "../../components/DashboardBox";
+import { useGetKpisQuery } from "../../state/api";
 
 const Row1 = () => {
   const { palette } = useTheme();
+
   const { data } = useGetKpisQuery();
 
   const revenue = useMemo(() => {
