@@ -1,1 +1,1 @@
-cd
+import { loadType } from "mongoose-currency";
