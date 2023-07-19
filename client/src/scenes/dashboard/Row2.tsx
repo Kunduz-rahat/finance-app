@@ -26,50 +26,11 @@ const pieData = [
 ];
 
 const Row2 = () => {
-  const { palette } = useTheme();
-  const pieColors = [palette.primary[800], palette.primary[300]];
-  const { data: operationalData } = useGetKpisQuery();
-  const { data: productData } = useGetProductsQuery();
-
-  const operationalExpenses = useMemo(() => {
-    return (
-      operationalData &&
-      operationalData[0].monthlyData.map(
-        ({ month, operationalExpenses, nonOperationalExpenses }) => {
-          return {
-            name: month.substring(0, 3),
-            "Operational Expenses": operationalExpenses,
-            "Non Operational Expenses": nonOperationalExpenses,
-          };
-        }
-      )
-    );
-  }, [operationalData]);
-
-  const productExpenseData = useMemo(() => {
-    return (
-      productData &&
-      productData.map(({ _id, price, expense }) => {
-        return {
-          id: _id,
-          price: price,
-          expense: expense,
-        };
-      })
-    );
-  }, [productData]);
-
   return (
     <>
-      <DashboardBox gridArea="d">
-       
-      </DashboardBox>
-      <DashboardBox gridArea="e">
-       
-      </DashboardBox>
-      <DashboardBox gridArea="f">
-      
-      </DashboardBox>
+      <DashboardBox gridArea="d"></DashboardBox>
+      <DashboardBox gridArea="e"></DashboardBox>
+      <DashboardBox gridArea="f"></DashboardBox>
     </>
   );
 };
