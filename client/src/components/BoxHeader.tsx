@@ -1,6 +1,6 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import React from "react";
-import  FlexBetween from "./FlexBetween";
+import FlexBetween from "./FlexBetween";
 
 type Props = {
   title: string;

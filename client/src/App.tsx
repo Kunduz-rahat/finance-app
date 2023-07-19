@@ -5,7 +5,6 @@ import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import { themeSettings } from "./theme";
-
 import Dashboard from "./scenes/dashboard";
 import Predictions from "./scenes/Predictions";
 import Navbar from "./scenes/Navbar";

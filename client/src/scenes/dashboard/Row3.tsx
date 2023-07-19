@@ -1,4 +1,3 @@
-import React from "react";
 import DashboardBox from "../../components/DashboardBox";
 
 type Props = {};
